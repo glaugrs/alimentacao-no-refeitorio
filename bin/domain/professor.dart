@@ -1,4 +1,6 @@
-class Professor {
+import 'pessoa.dart';
+
+class Professor extends Pessoa {
   String nome;
   String curso;
   String dataNasc;
@@ -7,5 +9,6 @@ class Professor {
   String grauEscolaridade;
 
   Professor(this.nome, this.curso, this.dataNasc, this.endereco, this.salario,
-      this.grauEscolaridade);
+      this.grauEscolaridade, int idade)
+      : super(nome, idade, dataNasc);
 }
